@@ -1,0 +1,112 @@
+---
+title: "Chapter 2 Notes"
+output:
+  html_document:
+    theme: cosmo
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+* **Section 1** -- BA at the strategic level
+    * Strategy -- A description of the overall way in which a business currently is, and is to be, run.
+    * Information -- Facts provided or learned about something or someone
+    * Strategy determines what information is necessary, Information then helps determine the strategy.
+    * Humans make better decisions when data is used.
+* **Section 2** -- Linking Strategy and BA
+    * Properties of a strategy
+        * It’s purpose is to adapt each business area, resources and activities to the market in which the organization operates.
+        * Typically covers a year at a time
+        * Attempts to handle company issues in the short run
+        * While creating competitive advantage in the long run
+    * Strategy’s purpose is to adapt each business area, resources and activities to the market in which the organization operates
+    * In a strategic or overall management context, information is used to change and coordinate business processes in the functional areas of the organization. The reason for our use of the word coordinate is that strategic management should not be seen as a number of serial actions, but rather as a number of parallel actions, in a number of departments, that must be coordinated.
+    * Remember that analytics can help orient the company towards the strategy
+* **Section 3** -- Four Scenarios
+    * Four scenarios represent maturity, ability and willingness to work with information at different levels.
+    * Differences not a matter of “good” to “bad”
+    * Option exists to take steps toward next phase or move to a strategy that is less dependent on information.
+    * Scenario 1 -- Separate
+        * Conditions
+            * Company has no data
+            * Company has limited data distributed over a large number of systems
+            * Typically unable to make a connection between data and strategy
+        * How is data used?
+            * Not used for strategic decision making
+            * In connection with ad hoc requests
+            * Potentially to automate processes
+            * Used with no link to business strategy (tactical decisions only)
+        * Other considerations
+            * Strategy
+                * Data provided may not actually inform the business strategy
+                * BA tasks prioritized by level and function of requestor rather than relevance to the business strategy
+            * Issues
+                * Will likely see a large number of reports generated 
+                * Reports will likely be inconsistent with one another
+                * Quality will be judged on how quickly reports can be generated and not on how well founded the answer is
+            * Types of companies
+                * Small businesses with few customers
+                * Cost of running data warehouse is bigger than the value of the decision support
+                * Companies with no processes to digitize
+                * Define their targets in a way that is not measurable
+    * Scenario 2 -- Coordinated
+        * Conditions
+            * BA function requested to monitor individual functions’ achievement of targets
+        * How is data used?
+            * Reactive in relation to the strategy function
+            * No flow back to the strategic level from the analytic level
+            * This means that strategy is created w/o data
+        * SMART Goals
+            * Objectives need to be specific, measurable and time-bound so they can be defined and operationalized
+            * If they aren’t implementing a technical solution will be difficult (if not impossible)
+            * If objectives aren’t measurable, we cannot quantify them or measure them on an ongoing basis
+            * Non-specific objectives lead to multiple versions of the truth
+            * Not all objectives/targets need to be in our data warehouse but it is generally preferred to have one source for all data
+            * Supplemental material: OKRs
+    * Scenario 3 -- Dialogue
+        * Conditions
+            * Individual functions optimize work based on BA information
+            * Strategy function also uses BA information to learn about progress
+        * How is data used?
+            * BA function reports on business targets
+            * Provides analysis on differences between targets and actuals
+            * Improves future strategies AND individual department performance
+    * Scenario 4 -- Holistic
+        * Conditions
+            * Data used as a strategic resource that can be used to determine strategy
+        * How is data used?
+            * Systematically use information to adjust strategy and gain competitive advantage
+        * Characteristics
+            * More about people competencies – information and analysis present in all areas of the business
+            * Top management level will include both strategic and information knowledge
+            * Company will provide objectives of the strategy and directions as to how they should be reached via the use of information
+            * Information will be used as a result of a top-down process as well as a bottom-up process
+            * Information used first to identify how the market works (competitive parameters) and second to ensure the business is differentiated from its competitors
+    * Also refer to the table in the slides.
+* **Section 4** -- Prioritization of information
+    * Three disciplines for market leadership
+    * Product innovation
+        * Leading supplier of state-of-the-art products
+        * Focused on technological aspects of their products
+    * Customer intimacy
+        * Establish a psychological connection to customers
+        * Must focus on customer loyalty
+    * Operational excellence
+        * Efficient in relation to production and delivery
+        * Compete primarily on price
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
