@@ -1,0 +1,79 @@
+---
+title: "Chapter 1 Notes"
+output: 
+  html_document: 
+    theme: cosmo
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+* **Section 1**
+    * Understand the importance of data on changing behavior
+* **Section 2**
+    * Core competencies -- defining characteristics that distinguish companies from their competitors
+        * Typically this means knowing what customers want and when they want it.
+    * Discussions of analytics generally start with technologies. This is backwards.
+    * Analytics definition 1 -- Delivering the right decision support to the right people at the right time.
+    * People buy drills, not holes.
+        * In analytics, holes are
+            * Ability to execute, monitor and control business processes
+            * Provide insights to improve those processes
+    * Analytics definition 2 -- Delivering the right decision support to the right people and digital processes at the right time.
+        * Here we include algorithms as recievers of information
+    * Buiness analytics consists of:
+        * Technical Element
+            * Used to collect, store and deliver information
+            * Almost always talking about electronic data
+            * Data can be delivered by a front-end system to visually present data to users
+        * Human Competencies
+            * A person typically needs to retrieve data and deliver it via various methods to an audience
+            * Analysts must know how to generate knowledge targeted to a specific audience
+            * People must know how to consume data and change behavior accordingly
+        * Business Processes
+            * Need to know which processes to support with the information system
+            * Need to identify how value is achieved
+    * BA is an interaction of the following. It is important to think of Business Analytics in this way so that value is provided to the business.
+        * IT
+        * Strategy
+        * Business processes
+        * A broad spectrum of human competencies
+        * Organizational circumstances
+        * and Cooperation across the organization
+* **Section 3**
+    * Introduce the Business Analytics Model which shows how context regarding strategy flows from business leaders to the analytics function and then to the technical function. Information and knowledge then flow back to the business.
+    * Adoption of analytics and automation still represent a challenge. Not due to technology but due to changing people's behavior and attitudes regarding data.
+    * 7 Sure fire ways to fail at analytics:
+        1. Jump in without knowing what you’re looking for
+        2. Build (and maintain) your own infrastructure
+        3. Be a data divider, not a data unifier
+        4. Eschew good data hygiene
+        5. Forgo executive sponsorship of analytics initiatives
+        6. Ignore middle- and lower-level managers
+        7. Lack the culture and skills to support good data analytics
+    * Strategy = combination of all the decisions taken and actions performed to secure a competitive position in the market
+        * Produces -- Key Performance Indicators (KPIs) = used to measure degree of progress and success
+    * KPIs inform the next level what is important to business leaders
+        * Produces -- Optimized processes that ensure KPIs reach specified levels
+    * Business processes designed to meet Key Performance Indicators
+        * Produces -- Data collection, analytics strategies and potentially statistical models
+    * Data collection, analytics strategies and statistical models
+        * Produces -- Data collection technologies and data structures
+    * Data collection technologies and data structures
+        * Produces -- Staff hired to create and maintain these technologies
+* **Lab 1**
+    * Git -- a software package that does version control.
+    * GitHub -- web service that provides a way to share and collaborate on projects using Git.
+    * System that can help you avoid saving versions of a document or project in different files.
+    * Repository -- another word for project (more or less a folder).
+    * Commit -- like a save, but different because more information exists along with the commit.
+        * Can add notes (or messages) to each commit to describe what changed.
+
+
+
+
+
+
+
+
