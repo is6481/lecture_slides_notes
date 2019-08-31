@@ -1,9 +1,7 @@
 ---
 title: "Chapter 2 Notes"
 output:
-  pdf_document: default
-  html_document:
-    theme: cosmo
+  md_document
 ---
 
 ```{r setup, include=FALSE}
