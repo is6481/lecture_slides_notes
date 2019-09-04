@@ -26,3 +26,26 @@ knitr::opts_chunk$set(echo = TRUE)
         * If a table is used, it is delivered with a summary or presentation of that it means in relation to business objectives
         * Not a result of automation
         * Requires analysts, quantitative methods and business insight
+* **Analyst's Role**
+    * Link the technical environment with the business environment
+    * Ensure business value can be extracted from the technical environment
+        * Then extract that value
+    * Technicians have a tendency to perceive the organization as a large number of technologies that together constitute a systems structure, in relation to which data from the source systems moves.
+    * This perspective is incompatible with a business perspective, which sees the organization as a large number of value‐adding processes that ultimately deliver different types of services or products to its customers.
+    * If maintenance becomes an objective...
+        * Huge volumes of low quality data
+        * Investment in data is just a cost with no benefit
+        * Every time we want to enter data into warehouse can’t b/c IT is working on some project business isn’t interest in
+        * System uses all its resources to maintain itself instead of serving the business
+    * Other issues
+        * Providing front-end reports the business isn’t asking for
+        * Reports may not be formatted for specific business objectives
+        * Usually results in reluctance to use data warehouse
+        * OR general mistrust in data provided
+    * Poor analytic support results in:
+        * Companies invest millions in technical environment but don’t invest in analytic staff
+        * Analysts are only data managers or report developers
+        * Unable to contribute any independent analytics input
+
+
+
