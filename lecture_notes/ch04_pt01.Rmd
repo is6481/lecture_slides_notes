@@ -46,6 +46,33 @@ knitr::opts_chunk$set(echo = TRUE)
         * Companies invest millions in technical environment but don’t invest in analytic staff
         * Analysts are only data managers or report developers
         * Unable to contribute any independent analytics input
-
+* **Three Requirements for Analysts**
+	* Business competencies
+		* Understand the business process he or she is supporting and how the delivered information/knowledge can make a value-adding difference at a strategic level.
+			* The business needs a clear strategy that is communicated to the analyst. The analyst needs to make sure analysis considers company strategy.
+		* The analyst understands and is able to convey the potential of using information as a competitive parameter
+			* The analyst needs to be a good communicator and how to leverage results to benefit the business
+		* Understand the business process he or she is supporting and how the delivered information/knowledge can make a value-adding difference at a strategic level.
+			* The analyst needs to have a close relationship with the business units supported. The business unit needs to trust the analyst.
+		* The analyst needs to have or be given a fundamental business insight in relation to the deliveries that are to be made.
+			* Results that do not relate to business action or understanding are of no use to the business.
+		* The analyst must be able to optimize deliverables in such a way that the user is given the best possible decision support.
+			* Audience needs to be considered carefully when providing results to the business.
+		* The analyst needs to be capable of having a continual dialogue with the business, as well as of detecting and creating synergies across functions.
+			* Analysts need to have a close relationship with the business units they support. Analysts across functions need to keep in close contact
+	* Tool kit that is in order (method competencies)
+		* Data Visualization -- Often a requirement to visualize information so that the user gets an overview of results.
+		* Statistical Methods
+			* Need users to derive the correct insight from the information being provided.
+			* Must know which test to use and when (will often need to look up details)
+		* Statistical Software
+			* Analysts should not define themselves based on their knowledge of a specific software package.
+			* Most analytical software provide the same functions in slightly different ways.
+			* Most analytics software are compatible with one another.
+			* Most important: extract the right insight. 
+	* Technical understanding (data competencies)
+		* Analysts will spend around 80% of their time importing and cleaning data
+		* Analysts need to be adept at data cleaning/manipulation to maximize their effectiveness
+	* Analytics is a team sport -- don't need all these competencies in every person on the team.
 
 
