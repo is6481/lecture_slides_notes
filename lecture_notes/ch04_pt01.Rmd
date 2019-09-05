@@ -61,7 +61,8 @@ knitr::opts_chunk$set(echo = TRUE)
 		* The analyst needs to be capable of having a continual dialogue with the business, as well as of detecting and creating synergies across functions.
 			* Analysts need to have a close relationship with the business units they support. Analysts across functions need to keep in close contact
 	* Tool kit that is in order (method competencies)
-		* Data Visualization -- Often a requirement to visualize information so that the user gets an overview of results.
+		* Data Visualization
+			* Often a requirement to visualize information so that the user gets an overview of results.
 		* Statistical Methods
 			* Need users to derive the correct insight from the information being provided.
 			* Must know which test to use and when (will often need to look up details)
