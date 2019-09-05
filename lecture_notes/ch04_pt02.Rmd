@@ -1,0 +1,26 @@
+---
+title: "Chapter 4 pt 2 (Module 5) Notes"
+output:
+  md_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+* **Section 1** -- Required Competencies
+	* Analytics role to go from data collection to delivering information or knowledge to the business
+	* The business can experience considerable loss if analytics staff are not competent at their position
+	* A lack of good analytics staff can also cause a loss in the investment made in the technical environment
+	* Aims of this section
+		* Mapping process
+		* Start with specific information requirements
+		* Identify specific analytical techniques
+		* Present a model that can be used in the dialogue between management and analyst
+	* A caution: requesting a specific analysis be done can result in misalignment with analytics staff.
+		* As the text suggests, always start with the business needs and allow analytics staff to work out the necessary methods
+	* See slides for the balance of the summary
+* **Section 2** -- Quantitative Method Summary
+	* See slides for notes (there's no need for me to re-format these notes)
+* **Section 3** -- 
+
