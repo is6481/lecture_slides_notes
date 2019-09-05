@@ -22,7 +22,7 @@ knitr::opts_chunk$set(echo = TRUE)
 	* See slides for the balance of the summary
 * **Section 2** -- Quantitative Method Summary
 	* See slides for notes (there's no need for me to re-format these notes)
-* **Section 3** -- 
+* **Section 3** -- Business Requirements
 	* Business requirements describe the characteristics of a proposed system from the viewpoint of the system's end user. (Wikipedia)
 	* The analyst must be able to understand and translate the business user's thoughts and needs into something that can be answered through analyst or data manager or report developer competencies.
 	* Definition of the problem
