@@ -1,0 +1,202 @@
+---
+title: "Chapter 4 pt 1 Notes"
+output:
+  md_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+* **Section 1** -- Why a data warehouse
+    * Data warehouse consists of two parts:
+        * Technical – must ensure the company’s data is collected from its source systems and that it is stored, combined, structured and cleansed regardless of source system
+        * Business – must ensure the desired key figures and reports can be created
+    * How does it relate to anlytics
+        * Analytics function receives input from different source systems and combines them in a different context than initially intended
+        * BA not possible w/o access to a combined data foundation
+        * This is what the data warehouse does MEANING BA is helped considerably by the presence of a data warehouse
+    * Reasons to have a datawarehouse
+        * To avoid information islands and manual processes in connection with the organization's primary systems
+        * To avoid overloading of source systems with daily reporting and analysis
+        * To integrate data from many different source systems
+        * To create a historical data foundation that can be changed/ removed in source systems
+        * To aggregate performance and data for business needs
+        * To add new business terms, rules, and logic to data (e.g., rules that do not exist in source systems)
+        * To establish central reporting and analysis environments
+        * To hold documentation of metadata centrally upon collection of data
+        * To secure scalability to ensure future handling of increased data volumes
+        * To ensure consistency and valid data definitions across business areas and countries (this principle is called one version of the truth)
+* **Section 2** -- Architecture and process
+    * ETL 
+        * **Extract** – data from source table
+        * **Transform** – for business use
+        * **Load** – to target table in the data warehouse or different locations outside the data warehouse
+        * Set up as jobs on a schedule (or via some other trigger)
+        * ETL jobs may include data already in the data warehouse
+    * Transform
+        * Primary purpose of an ETL process
+        * One or more steps to modify the data
+        * Typically done using Structured Query Language (SQL)
+        * Other types of systems now available
+        * Examples
+            * Translating coded values – for example, the source system is storing “M” for man and “W” for woman, but the data warehouse wants to store the value 1 for man and 2 for woman.
+            * Mapping of values – For example, mapping of the values “Man,” “M” and “Mr.” into the new value 1.
+            * Calculating a new calculated value – For example, sales = number × unit price.
+            * Joining from different sources – For example, to look‐up or merge.
+            * Summing up of several rows of data – For example, total sales for all regions.
+            * Generating a surrogate key –This is a unique value attributed to a row or an object in the database. The surrogate key is not in the source system; it is attributed by the ETL tool.
+            * Transposing – Changing multiple columns to multiple rows or vice versa.
+
+    * Load
+        * At the end of the process, the transformed data is loaded into a specific target table in the data warehouse
+        * Data in the target table is either replaced or appended to (so long as it is an existing target)
+    * Process Timing
+        * Realtime
+            * Happen as the data is accessed
+            * Pull data from tables as they exist at run time
+        * Scheduled
+            * Happen at a time specified by the ETL developer
+            * Pull data from tables as they exist at run time
+        * Triggered
+            * Process will run based on a specified trigger
+            * Often the trigger will be an update from one of the inputs to the process
+            * All other tables are loaded in their current form
+* **Section 3** -- Data Quality
+    * What is data quality?
+        * Accuracy 
+        * Completeness
+        * Reliability
+        * Relevance
+        * How up to date it is
+    * Data quality costs
+        * Can cause breakdowns in the value chain (e.g. no items in stock)
+        * Impaired decision-making
+        * Substandard customer service – dissatisfaction and cancellation of business
+        * Lack of trust in reporting
+        * Negatively affects organization’s competitiveness
+    * What to look for
+        * Missing values (e.g. postal code, phone number)
+        * Duplicate values (identical data)
+        * Incorrect values
+        * Qualitative duplicates (references to the same entity where the data is not identical)
+        * Known formats (e.g. phone numbers, states, countries)
+    * Changing business
+        * Changing requirements can cause data quality issues
+        * Example from text – dates collected when we want to know sales by hour
+        * Introduction of new processes will cause nuances in reporting and data quality
+    * Data quality firewall
+        * Storage layer in data warehouse
+        * Keeps poor quality data out of internal processes and applications
+        * Data that can’t be cleansed is rejected by the firewall
+        * Should always inspect data and revise rules so the firewall keeps up with business needs
+    * Kitty litter principle -- data is like kitty litter, no matter how many times you clean it, there's still some turds left.
+        * Your data is like kitty litter…
+        * Important to have as many people looking in the cat box as possible
+        * Data quality is the responsibility of all employees
+        * Data quality issues should be expected
+        * Data quality issues should be fixed as quickly as possible
+* Functions, Components & Examples
+    * Definition of terms
+        * Data warehouse – the actual data tables used for reporting and analytics
+        * Meta data repository – data describing what is in the data warehouse (more on this later)
+            * Description of tables
+            * Description of each field
+            * Who has access
+            * When data was accessed
+        * Dimensions – a set of data attributes pertaining to something of interest to a business.
+            * Customer’s name
+            * Customer’s address
+            * Salesperson
+            * Location
+            * Region
+            * Fiscal time information (week, month, quarter)
+        * Facts – raw measurement of the business
+            * Sales transactions
+            * Email sent
+            * Consulting engagement
+            * Marketing event
+    * More about meta-data
+        * Makes finding things in the data warehouse easier
+        * Often there will be a search function based on the meta-data layer
+        * Tags and labels can be added to describe what things are and how they are calculated
+        * Increasingly will include data related to viewing patterns of data warehouse users
+    * Star schema
+        * Dimensional modeling is a popular way of organizing data (not the only way of organizing data)
+        * Easy way of describing how facts and dimensions are related to one another
+        * Efficiently stores data
+        * Allows us to answer, “Why did things turn out as they did?”
+    * Data Mart
+        * Specialized version of the data warehouse typically meant for a specific division or function
+        * Many times each business unit will have assumed ownership over their data mart
+        * Data may be stored in relational tables or in an OLAP cube
+        * Allows the data warehouse to focus on its internal processes and not on serving reports to end users
+    * Relational data model
+        * Data is organized using common characteristics (star schema)
+        * Requires the user to summarize data using SQL statements to aggregate and join data across tables
+        * Allows for novel queries
+    * OLAP Cube
+        * All aggregation and other calculations carried out before data is accessed
+        * Extraction from the cube is much faster and easier
+        * More difficult (potentially impossible) to answer new questions 
+        * Cube size increases exponentially when dimensions are added
+    * Alternative ways of storing data
+        * Hadoop, Apache Spark, Presto
+        * Act as more of a filesystem than a traditional database
+        * Highly scalable, distributed system
+        * Data typically very raw and cannot be changed
+        * Queries can take quite a while to return data
+        * Data might be moved into the data warehouse so it is easier and quicker to access
+    * Front-end portal
+        * The end destination for analytics data
+        * Often the way results of analytics is shown to the business
+* **Section 5** -- Tips and techniques
+    * Master Data Management
+        * Provides a unified view of data, when data integrated from different sources
+        * Includes precise definitions of key parts of the business (customers, localities, employees)
+        * Definitions will exist as master data sets in the data warehouse
+        * Want to ensure accuracy and consistency
+    * Service oriented architecture
+        * Design philosophy about how to structure a solution
+        * SOA entails integration across systems
+        * Each resource provides an interface to its functions
+        * Interface can be reached by other
+        * Today often provided on the web as APIs (Application Programming Interface)
+        * Businesses can provide these interfaces as part of their product
+    * Who accesses data and why?
+        * Analyst
+            * Typically has access to a large portion of the companies data
+            * Always bases analysis on business needs
+            * Not considered the “end user” for systems
+        * Business User
+            * Access typically limited to scope of their position
+            * May ask for assistance from the analyst for two reasons
+            * First: needs help creating new business information in the form of an analytic project
+            * Second: needs new information about the business due to changing needs
+                * the analyst helps provide information during implementation period
+        * (Analyst) Access to analytics portal
+            * May not actually need access b/c have direct access to data
+            * In smaller organizations the analyst may play multiple roles
+            * Portal provides fast and easy access
+            * Used for validating data during analytic projects
+        * (Analyst) Access to data marts
+            * May need access to develop data delivery to the business
+            * Always need access for data validation and to troubleshoot issues with differences in numbers
+            * May serve as a SQL generator to save time writing queries
+        * (Analyst) Access to data warehouse
+            * Generally the primary work area of the analyst
+            * Data in higher level systems may not have the detail necessary for various projects/questions
+            * Analyst may design a way to push data from the data warehouse into source systems as a way to complete projects
+        * (Analysts) Access to source systems
+            * Can take considerable time to work with source systems
+                * They are generally not optimized for analytic work
+            * May need access for data validation purposes
+            * Will need access to help establish a connection with the data warehouse
+
+
+
+
+
+
+
+
