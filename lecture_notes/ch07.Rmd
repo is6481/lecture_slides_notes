@@ -136,7 +136,46 @@ knitr::opts_chunk$set(echo = TRUE)
 		* Analysts report only what is available in the data warehouse
 		* When analysts acts in a grey area where should their loyalty be placed?
 		* Analyst’s role to challenge the data warehouse
-* *Section 5*
+* **Section 5** -- When to start BACC
+	* Beginning of a data warehouse project
+		* Analysts can contribute to the requirement gathering process
+		* BACC can oversee the actual project so you don’t forget why it started to begin with
+	* As a data warehouse project finishes
+		* Can be used as a kick-off for the BACC to begin working together
+		* Transfer knowledge as resources exit the project
+		* Make sure we know why things were created in a certain way
+		* Design reporting structures and processes in relation to use, maintenance, and future modifications
+	* When strategic level wants to start using at as a resource (any time, really)
+		* Ask the question: who will drive this further – leads to creation of Analytics group (BACC)
+		* Often need to address soft issues
+		* Train the organization on how to be data driven
+		* Change attitudes
+		* Help understand the importance of data quality
+		* Management must support the effort
+	* What happens if roll-out not done properly?
+		* Get into a vicious cycle where system has no users and dies
+		* Poor data quality will reduce effectiveness
+		* Projects will fail if people are not trained properly
+* **Section 6** -- Analytical Factories
+	* Not a term you will hear very often
+	* What is usually required when setting up new analytical processes?
+		* Determine which messaging is necessary for objectives
+		* Kick off a project to specify how the database will be used
+		* Create new ETL processes
+		* Investigate new data sets
+		* Add campaign to marketing automation system
+	* Analytical factory approach
+		* Fixed set of data sets containing customer properties (incl behaviors)
+		* Fixed process/format for specifying subgroups of customers
+		* Fixed process/format for specifying messaging
+		* Fixed QA process
+		* Fixed deployment process
+	* In an "analytical factory" the analytics group sets up a process for making changes or adding to a specific system. All processes are standardized such that analysts need not be included when planned modifications or additions are made.
+
+
+
+
+
 
 
   
