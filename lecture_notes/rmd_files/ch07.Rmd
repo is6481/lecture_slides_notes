@@ -46,10 +46,10 @@ knitr::opts_chunk$set(echo = TRUE)
     * Create learning
         * The purpose of knowledge management is to have the best of both: a decentralized organization releasing its full creative potential while at the same time making sure that other decentralized units reuse the good ideas generated.
         * How do we do it?
-        * Public document store
-        * Internal Wiki
-        * Knowledge Management System
-        ( Digital solutions may lead to person-to-person interactions (and improve the knowledge stored in digital form)
+	        * Public document store
+	        * Internal Wiki
+	        * Knowledge Management System
+	        * Digital solutions may lead to person-to-person interactions (and improve the knowledge stored in digital form)
     * Technology benefits
         * Could reduce software costs via standardization and reduced duplication
         * A possible better negotiating position with vendors
@@ -94,7 +94,7 @@ knitr::opts_chunk$set(echo = TRUE)
 		* Generally reports directly to the strategic function of the business
 	* Virtualized (cross-functional group)
 		* BACC established as a virtual organization
-		* Smaller strategic roll
+		* Smaller strategic role
 		* Primarily setup to function at an operational level
 		* Should facilitate synergies at the departmental level
 	* Should determine if goal is to support strategy or improve performance.
